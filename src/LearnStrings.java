@@ -50,7 +50,10 @@ public class LearnStrings {
 
 //        String myText = "Four score and seven years ago";
 //        System.out.println(myText.contains());
-
+        String text1 = "this is my text1";
+        String text2 = " this is my text2";
+        System.out.println(text1 + text2); //this is my text1 this is my text2
+        System.out.println(text1.concat(text2)); //this is my text1 this is my text2
 
 
     }
