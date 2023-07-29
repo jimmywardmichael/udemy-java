@@ -25,7 +25,12 @@ public class LearnStrings {
 //        String myText = "here's my awesome firf text";
 //        System.out.println(myText.replace("firf", "nice"));
 
+//        String firstName = "  Jake  ";
+//        System.out.format("'%s'", firstName.stripIndent());
 
+        String firstName = "       John     ";
+        System.out.format("'%s'", firstName.trim()); //.trim removes whitespace from John leading and trailing
+            //prints out 'John'
 
 
     }
