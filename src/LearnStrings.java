@@ -50,11 +50,40 @@ public class LearnStrings {
 
 //        String myText = "Four score and seven years ago";
 //        System.out.println(myText.contains());
-        String text1 = "this is my text1";
-        String text2 = " this is my text2";
-        System.out.println(text1 + text2); //this is my text1 this is my text2
-        System.out.println(text1.concat(text2)); //this is my text1 this is my text2
+//        String text1 = "this is my text1";
+//        String text2 = " this is my text2";
+//        System.out.println(text1 + text2); //this is my text1 this is my text2
+//        System.out.println(text1.concat(text2)); //this is my text1 this is my text2
 
+        String phoneNumber = "(234) 333-5551";
+        String areaCode = parseAreaCode(phoneNumber);
+        String exchange = parseExchange(phoneNumber);
+        String lineNumber = parseLineNumber(phoneNumber);
 
+        System.out.println(areaCode);
+        System.out.println(exchange);
+        System.out.println(lineNumber);
     }
+
+    public static String parseAreaCode(String phoneNumber) {
+        int openParens = phoneNumber.indexOf("(");
+        int closeParens = phoneNumber.indexOf(")");
+        String areaCode = phoneNumber.substring(openParens + 1, closeParens);
+        return areaCode;
+    }
+
+    public static String parseExchange(String phoneNumber) {
+        int spaceIdx = phoneNumber.indexOf(" ");
+        int hypenIdx = phoneNumber.indexOf("-");
+        String exchange = phoneNumber.substring(spaceIdx + 1, hypenIdx);
+        return exchange;
+    }
+
+    public static String parseLineNumber(String phoneNumber) {
+        int hyphenIdx = phoneNumber.indexOf("-");
+        String lineNumber = phoneNumber.substring(hyphenIdx + 1);
+        return lineNumber;
+    }
+
+
 }
