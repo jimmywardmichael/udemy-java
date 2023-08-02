@@ -84,6 +84,4 @@ public class LearnStrings {
         String lineNumber = phoneNumber.substring(hyphenIdx + 1);
         return lineNumber;
     }
-
-
 }
