@@ -94,5 +94,12 @@ public class LearnStrings {
         String[] people = text.split("\n");
         System.out.println(people.length);
         //prints out 5 by parsing String into rows
+        System.out.println(people[2]);
+        //prints out the string in the array which is Flintstone,Fred
+        String[] split = people[4].split(",");
+        System.out.println(split[4]);//Grapefruit
+        System.out.println(split[0]);//Jetson
+        System.out.println(split[1]);//George
+
     }
 }
