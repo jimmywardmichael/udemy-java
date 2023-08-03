@@ -84,22 +84,32 @@ public class LearnStrings {
 //        String lineNumber = phoneNumber.substring(hyphenIdx + 1);
 //        return lineNumber;
 
-        String text = """
-                Smith,Fred,1/1/79,1111 ABC St.,Apple,CA
-                McGuire,Jerry,2/2/80,2222 DEF St.,Orange,NV
-                Flintstone,Fred,3/3/81,3333 GHI St.,Pear,MO
-                Rubble,Barney,4/4/82,4444 JKL St.,Pineapple,IL
-                Jetson,George,5/5/83,5555 MNO St.,Grapefruit,TX
-                """;
-        String[] people = text.split("\n");
-        System.out.println(people.length);
-        //prints out 5 by parsing String into rows
-        System.out.println(people[2]);
-        //prints out the string in the array which is Flintstone,Fred
-        String[] split = people[4].split(",");
-        System.out.println(split[4]);//Grapefruit
-        System.out.println(split[0]);//Jetson
-        System.out.println(split[1]);//George
+
+
+        //////////////*******.split() Method below showing how to use a multiline String using the """  """***********
+
+
+
+//        String text = """
+//                Smith,Fred,1/1/79,1111 ABC St.,Apple,CA
+//                McGuire,Jerry,2/2/80,2222 DEF St.,Orange,NV
+//                Flintstone,Fred,3/3/81,3333 GHI St.,Pear,MO
+//                Rubble,Barney,4/4/82,4444 JKL St.,Pineapple,IL
+//                Jetson,George,5/5/83,5555 MNO St.,Grapefruit,TX
+//                """;
+//        String[] people = text.split("\n");
+//        System.out.println(people.length);
+//        //prints out 5 by parsing String into rows
+//        System.out.println(people[2]);
+//        //prints out the string in the array which is Flintstone,Fred
+//        String[] split = people[4].split(",");
+//        System.out.println(split[4]);//Grapefruit
+//        System.out.println(split[0]);//Jetson
+//        System.out.println(split[1]);//George
+        String fileName = "myfile.txt";
+        System.out.println(fileName.startsWith("myfile.txt"));
+        System.out.println(fileName.endsWith(".txt"));
+
 
     }
 }
